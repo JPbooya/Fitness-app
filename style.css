@@ -42,12 +42,32 @@ body {
   }
   
   button:hover {
-    background-color: #218838;
+    background-color: greenyellow;
   }
   
   #result {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
+  }
+
+  #workout-from {
+    margin-top: 20px;
+  }
+
+  #workout-form input,
+  #workout-form button {
+    padding: 8px;
+    margin: 5px;
+  }
+
+  #workout-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  h2 {
+    text-align: center;
   }
   
