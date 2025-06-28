@@ -25,10 +25,12 @@ body {
     margin-top: 10px;
   }
   
-  input {
+  #bmiForm input, 
+  #bmiForm button {
     width: 100%;
+    box-sizing: border-box;
     padding: 8px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   
   button {
@@ -51,14 +53,16 @@ body {
     font-weight: bold;
   }
 
-  #workout-from {
+  #workout-form {
     margin-top: 20px;
   }
 
   #workout-form input,
   #workout-form button {
+    width: 100%;
+    box-sizing: border-box;
     padding: 8px;
-    margin: 5px;
+    margin: 10px;
   }
 
   #workout-list {
@@ -70,4 +74,37 @@ body {
   h2 {
     text-align: center;
   }
+
+  .layout-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* aligns them to the top */
+    gap: 40px; /* space between the two boxes */
+    padding: 40px;
+    flex-wrap: wrap; /* makes it stack on small screens */
+  }
+  
+  /* Container layout for side-by-side boxes */
+.layout-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /*  makes both containers same height */
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Equal size for both containers */
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 320px;          /* fixed width */
+    min-height: 450px;     /* fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
   
