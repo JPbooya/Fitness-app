@@ -1,21 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    margin: 0;
+    background: linear-gradient(135deg, #0f0f0f, #2c2c2c);
+    color: #f1f1f1;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   
   .container {
-    background-color: white;
+    background-color: #1e1e1e;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    width: 320px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
-  h1 {
+  h1, h2 {
     text-align: center;
     margin-bottom: 20px;
   }
@@ -25,63 +30,60 @@ body {
     margin-top: 10px;
   }
   
-  #bmiForm input, 
-  #bmiForm button {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px;
-    margin-top: 10px;
-  }
-  
   button {
-    width: 100%;
+    background-color: #444;
+    color: #fff;
+    border:none;
     padding: 10px;
     margin-top: 15px;
-    background-color: #28a745;
-    color: white;
-    border: none;
     cursor: pointer;
+    transition: background 0.3s;
   }
   
   button:hover {
-    background-color: greenyellow;
+    background-color: #666;
   }
   
   #result {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
+    color: #0fffc1
   }
 
   #workout-form {
     margin-top: 20px;
   }
-
+  #bmiForm input, 
+  #bmiForm button,
   #workout-form input,
   #workout-form button {
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
     margin: 10px;
+    background-color: #2e2e2e;
+    border: 1px solid #555;
+    color: #fff;
   }
 
   #workout-list {
-    margin-top: 20px;
-    list-style-type: none;
-    padding-left: 0;
+    background-color: #2e2e2e;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-left: 4px solid #888;
+    color: #ddd;
   }
 
-  h2 {
-    text-align: center;
-  }
-
-  .layout-row {
+  #workout-list li {
+    background-color: #2e2e2e;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-left: 4px solid #888;
+    color: #ddd;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* aligns them to the top */
-    gap: 40px; /* space between the two boxes */
-    padding: 40px;
-    flex-wrap: wrap; /* makes it stack on small screens */
+    justify-content: space-between;
+    align-items: center;
   }
   
   /* Container layout for side-by-side boxes */
@@ -93,18 +95,6 @@ body {
     padding: 40px;
     flex-wrap: wrap;
   }
-  
-  /* Equal size for both containers */
-  .container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 320px;          /* fixed width */
-    min-height: 450px;     /* fixed height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+
   
   
