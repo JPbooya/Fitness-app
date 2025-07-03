@@ -85,7 +85,7 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   /* Container layout for side-by-side boxes */
 .layout-row {
     display: flex;
@@ -95,6 +95,13 @@ body {
     padding: 40px;
     flex-wrap: wrap;
   }
+
+.placeholder {
+    color: #888;
+    font-style: italic;
+    border-left: none;
+    padding-left: 0;
+}
 
   
   

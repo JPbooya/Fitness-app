@@ -7,6 +7,14 @@ form.addEventListener("submit", function (e) {
   const name = document.getElementById("workout-name").value;
   const details = document.getElementById("workout-details").value;
 
+    // only procced if both fields are filled 
+  if (name && details) {
+    const placeholder = document.getElementById("placeholder");
+    if (placeholder) {
+        placeholder.remove();
+    }
+  }
+
   const listItem = document.createElement("li");
   listItem.textContent = `${name} - ${details}`;
   workoutList.appendChild(listItem);
