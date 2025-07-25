@@ -6,10 +6,13 @@ document.getElementById("login-form").addEventListener("submit", async function 
 
     try {
                                     // mock for testing 
+        const API_KEY = "reqres-free-v1"
         const response = await fetch("https://reqres.in/api/login", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json" },
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${API_KEY}` 
+            },
             body: JSON.stringify({ email, password })
         });
 
